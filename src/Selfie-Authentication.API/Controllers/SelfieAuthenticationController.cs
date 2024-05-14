@@ -44,7 +44,7 @@ namespace Selfie_Authentication.API.Controllers
             catch(Exception ex)
             {
                 _logger.LogError($"An error occurred, See details {ex.Message}, {ex.StackTrace}");
-                return StatusCode(StatusCodes.Status500InternalServerError, new RequestResult { code = "UNEXPECTED_ERROR", message = "An unexpected error occurred", Succeeded = false });
+                return StatusCode(StatusCodes.Status500InternalServerError, new RequestResult { code = "INTERNAL_SERVER_ERROR", message = "An unexpected error occurred", Succeeded = false });
             }
         }
 
@@ -71,7 +71,7 @@ namespace Selfie_Authentication.API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"An error occurred, See details {ex.Message}, {ex.StackTrace}");
-                return StatusCode(StatusCodes.Status500InternalServerError, new RequestResult { code = "UNEXPECTED_ERROR", message = "An unexpected error occurred", Succeeded = false });
+                return StatusCode(StatusCodes.Status500InternalServerError, new RequestResult { code = "INTERNAL_SERVER_ERROR", message = "An unexpected error occurred", Succeeded = false });
             }
         }
     }
