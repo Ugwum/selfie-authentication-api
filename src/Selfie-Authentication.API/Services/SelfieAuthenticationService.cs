@@ -11,13 +11,6 @@ using S3Object = Amazon.Rekognition.Model.S3Object;
 
 namespace Selfie_Authentication.API.Services
 {
-
-    public interface ISelfieAuthenticationService
-    {
-        Task<RequestResult> RegisterUserSelfie(string base64Image);
-
-        Task<RequestResult> AuthenticateUserSelfie(string base64Image);
-    }
     public class SelfieAuthenticationService : ISelfieAuthenticationService 
     {
         private readonly ILogger<SelfieAuthenticationService> _logger;
