@@ -1,5 +1,3 @@
-# selfie-authentication-api
-
 # Selfie Authentication API
 
 This is a .NET Core Web API project that provides endpoints for registering and authenticating selfies using Amazon Rekognition and Amazon S3.
